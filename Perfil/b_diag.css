@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9EDE6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+    background: #BCE3D9;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 71px;
+    font-weight: bold;
+}
+
+.top-bar-1, .top-bar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.top-bar span {
+    cursor: pointer;
+    padding: 8px 12px;
+    color: #2E387D;
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-texto {
+    background-color: #A9E1D5;
+    border-radius: 20px;
+    color: #2E387D;
+    padding-left: 1.5rem;
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 1.5rem;
+    width: 20%;
+}
+
+.regis-text {
+    background-color: #5EBC52;
+    border-radius: 20px;
+    color: #2E387D;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+    font-size: large;
+    width: 20%;
+}
+
+.new-cont{
+    display: flex;
+    justify-content: center;      
+    align-items: center;         
+            
+}
+.cont-p{
+    display: flex;
+    justify-content: center;      
+    align-items: center;     
+
+}
+
+.container {
+    width: 800px;
+    background-color: #e7fff2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    justify-content: center;
+} 
+
+.login-form {
+    background-color: #C6D7E0;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    flex: 1;
+    
+}
+.cubo-input::placeholder{
+    color: #2E387D;
+
+
+}
+.cubo-input:hover,.cubo-input:focus,.cubo-input:focus-visible{
+    border: 1px solid #8B3DFF !important; 
+    outline: none;
+
+}
+
+
+
+
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color:#AEB3D8;
+    
+}
+
+
+
+
+
+.btn{
+    background-color: #5FB658;
+    color: white;
+    padding: 12px 24px;
+    padding-right: 16rem;
+    padding-left: 16rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.login-form button:hover {
+    background-color: #42AD32;
+}
+
+aside {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    flex-basis: 200px; 
+    margin-left: 40px; 
+} 
+
+.profile {
+    background-color: #A5DACE;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.p-boton{
+    background-color: #52BDA7;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    
+}
+
+.diag{
+    text-align: center;
+    color: #2E387D;
+    padding-bottom: 1rem;
+}
+
+.texto1{
+    padding-bottom:2rem;
+}
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .top-bar {
+      gap: 1rem;
+      padding: 1rem;
+      margin-bottom: 20px;
+      width: 94%;
+    }
+  
+    .logo img {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .logo-texto, .regis-text {
+      width: 100%;
+      text-align: center;
+      font-size: medium;
+      padding: 0.75rem;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 1rem;
+      flex-direction: column;
+    }
+  
+    .login-form {
+      width: 80%;
+      padding: 1rem;
+      margin-top: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .login-form input{
+        width: 90%;
+    }
+  
+  
+    .profile-img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .p-boton {
+      justify-content: center;
+      font-size: medium;
+      padding: 4px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .top-bar {
+      gap: 2rem;
+    }
+  
+    .logo img {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .logo-texto, .regis-text {
+      width: 50%;
+      padding: 0.5rem;
+
+      font-size: large;
+    }
+    .login-form input{
+        width: 90%;
+    }
+  
+    .container {
+      width: 90%;
+      padding: 2rem;
+    }
+  
+    .btn {
+      width: 80%;
+    }
+  
+    .profile-img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  

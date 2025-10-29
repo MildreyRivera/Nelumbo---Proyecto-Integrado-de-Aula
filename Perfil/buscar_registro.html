@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Registro</title>
+    <link rel="stylesheet" href="buscar_registro.css">
+    <link rel="shortcut icon" href="Logos/Nelumbo logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="top-bar-1">
+                <div class="logo">
+                    <img src="./Logos/Nelumbo logo.png" alt="">
+                </div>
+                <div class="logo-menu">
+                    <span class="logo-texto">NELUMBO</span>
+                </div>
+            </div>
+            <div class=" top-bar-2">
+                <div class="regis-menu">
+                    <a href="perfil_ac.html" class="regis-text">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-search">
+        <h4 class="titulo">Buscar Usuario</h4>
+        <form action="editar_registro.php" method="POST">
+            <input type="text" name="search_term" placeholder="Correo o su Identificación" required   autocomplete="off"> 
+            <button type="submit" name="search_user">Buscar</button>
+      </form>
+    </div>
+    
+</body>
+</html>

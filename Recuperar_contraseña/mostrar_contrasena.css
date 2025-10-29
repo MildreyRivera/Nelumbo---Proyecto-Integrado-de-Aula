@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9EDE6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+    background: #b8e6dc;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 71px;
+}
+
+.top-bar-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.top-bar span {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 1rem;
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-texto {
+    background-color: #A9E1D5;
+    border-radius: 20px;
+    color: #2E387D;
+    padding-left: 1.5rem;
+    font-weight: 400;
+    width: 20%;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    color: #2E387D;
+}
+
+.regis-text {
+    background-color: #5EBC52;
+    border-radius: 20px;
+    padding-left: 1.5rem;
+    font-weight: 400;
+    padding-right: 1.5rem;
+    width: 20%;
+    color: #FFFFFF; 
+    text-decoration: none;
+    padding-bottom: 0.55rem;
+    padding-top: 0.55rem;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 0.5rem; 
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    text-align: center;
+}
+
+.titulo {
+    color: #2e397d;
+    font-weight: bold;
+}
+
+.parrafo {
+    color: #5eb658;
+    font-weight: bold;
+    margin-bottom: 1.5rem; 
+}
+.parrafo2{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 1.5rem; 
+}
+
+.mini-container{
+    background-color: #7475cb71;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.logo_g{
+        justify-content: center;
+        display: flex;
+        width: 25vw;
+        position: relative;
+        left: 30rem;
+}
+    
+.logo_g img{
+        height: 100%;
+        width: 100%;
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+      gap: 1rem;
+      padding: 1rem;
+      width: 100%;
+    }
+  
+    .top-bar span {
+      font-size: 16px;
+      padding: 5px 8px;
+    }
+  
+    .logo img {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .logo-texto{
+        width: 50%;
+        font-size: medium;
+        padding: 1.5rem;
+      }
+      .regis-text{
+          padding: 0.5rem;
+          width: 50%;
+          font-size: medium;
+      }
+  
+    .main-container {
+      flex-direction: column;
+      padding: 1rem;
+      max-width: 600px; 
+      
+    }
+    
+  
+    .logo_g {
+      width: 40%;
+      
+      left: 11rem;
+
+    }
+  }
+  

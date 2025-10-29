@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario para citas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Imagenes/Nelumbo_logo.png" type="image/x-icon">
+</head>
+
+<body>
+ <div class="circulo">
+  
+
+ </div>
+
+
+  <form action="https://formsubmit.co/miguelprosupreme@gmail.com" method="POST" autocomplete="off">
+    <h2>Formulario para citas</h2>
+    <div class="input_group">
+      <label for="name">Nombre Completo</label>
+      <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off" />
+
+      <label for="ti">Do. Identidad</label>
+      <input type="text" name="ti" id="ti" placeholder="Do. Identidad" autocomplete="off" />
+
+
+      <div class="texto1">
+        <label for="grado">Grado</label>
+        <label for="edad">Edad</label>
+        <label for="fecha">Fecha (DD/MM/AA)</label>
+      </div>
+      <div class="cubo1">
+        <input type="text" name="grado" id="grado" placeholder="Grado" autocomplete="off" />
+        <input type="text" name="edad" id="edad" placeholder="Edad" autocomplete="off" />
+        <input type="date" name="fecha" id="fecha" placeholder="DD/MM/AA" autocomplete="off" />
+      </div>
+
+      <label for="email">Correo institucional</label>
+      <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" />
+
+      <label for="message">Añadir nota</label>
+      
+      
+      
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" autocomplete="off"></textarea>
+
+
+      <label for="name">Nombre acudiente</label>
+      <input type="text" name="name1" id="name1" placeholder="Nombre" autocomplete="off" />
+    </div>
+    <input class="enviar" type="submit" value="Enviar" />
+
+    <input type="hidden" name="_next" value="http://localhost/Nelumbo/Diagnostico/" />
+      <!-- evitamos el redirigir a otra pagina -->
+    <input type="hidden" name="_captcha" value="false" />
+      <!-- evitamos el captcha -->
+  </form>
+</body>
+
+</html>
